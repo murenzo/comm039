@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <title>{{ title }}</title>
+  </head>
+
+  <body>
+    <div class="container p-3">
+      <h1 class="text-center m-5">Configure application</h1>
+      <hr />
+      <form action="/configure" method="POST">
+        <div class="form-group">
+          <label for="exampleInputPassword1">Resource Count:</label>
+          <input type="number" class="form-control" name="resource_count">
+        </div>
+        
+        <div class="form-group">
+          <label for="exampleInputPassword1">Total Shots:</label>
+          <input type="number" class="form-control" name="total_shots">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Reporting Rate:</label>
+          <input type="number" class="form-control" name="reporting_rate">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Matching Digits:</label>
+          <input type="number" class="form-control" name="matching_digits">
+        </div>
+
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
